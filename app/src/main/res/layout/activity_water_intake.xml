@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bithealth.com.bithealth.WaterIntake"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Current Water Intake (litres)"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2.3l"
+        android:id="@+id/txtCurrentIntake"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:drawableLeft="@drawable/bottle"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/back"
+        android:paddingTop="20dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWaterIntake"
+            android:hint="Add Water Intake (litres)..."
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drink"
+            android:id="@+id/btnWaterIntake"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/txtWaterIntake"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="57dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

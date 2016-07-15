@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Add Activity">
+        <menu>
+            <item
+                android:id="@+id/nav_scanQR"
+                android:icon="@drawable/imgqr"
+                android:title="Scan QR Code" />
+            <item
+                android:id="@+id/nav_nfc"
+                android:icon="@drawable/imgnfc"
+                android:title="Scan NFC Tag" />
+            <item
+                android:id="@+id/nav_waterIntake"
+                android:icon="@drawable/navbottle"
+                android:title="Add Water Intake" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_UserProgress"
+            android:icon="@drawable/navuserinfo"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+
+    </group>
+
+</menu>

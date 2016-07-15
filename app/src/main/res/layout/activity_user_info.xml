@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bithealth.com.bithealth.UserInfo"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:id="@+id/progBar"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/img15"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/profile_img"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:siBorderWidth="3dp"
+        app:siBorderColor="@color/colorPrimaryDark"
+        android:layout_marginTop="87dp"
+        android:layout_alignTop="@+id/progBar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BMI Goal Progress"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorWhite"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="360dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgtotal"
+            android:src="@drawable/bmi"
+            android:layout_alignBottom="@+id/txtCurrentBMI"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:paddingTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Current BMI"
+            android:textSize="15dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="256"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/txtCurrentBMI"
+            android:textSize="20dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
+
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgtotalDays"
+            android:src="@drawable/total"
+            android:layout_alignBottom="@+id/txtTotalPoints"
+            android:layout_toStartOf="@+id/txtTotalPoints"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="120"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/txtTotalPoints"
+            android:textSize="20dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+        <TextView
+            android:paddingTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Total Points"
+            android:id="@+id/textView8"
+            android:textSize="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgnextmeeting"
+            android:src="@drawable/calendar"
+            android:layout_below="@+id/txtCurrentBMI"
+            android:layout_alignStart="@+id/imgtotal"
+            android:layout_marginTop="40dp" /> <!---->
+
+        <TextView
+            android:paddingTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Last Workout"
+            android:id="@+id/nextmeeting"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_alignTop="@+id/imgnextmeeting"
+            android:layout_toEndOf="@+id/imgnextmeeting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="11/07/2016"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/txtLastWorkout"
+            android:textSize="20dp"
+            android:layout_below="@+id/nextmeeting"
+            android:layout_alignStart="@+id/nextmeeting" />
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imghealth"
+            android:src="@drawable/scale"
+            android:layout_alignTop="@+id/nextmeeting"
+            android:layout_alignEnd="@+id/imgtotalDays" />
+
+        <TextView
+            android:paddingTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Weight"
+            android:id="@+id/healthstatus"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"
+            android:layout_alignTop="@+id/imghealth"
+            android:layout_alignStart="@+id/txtTotalPoints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Good"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/txtWeight"
+            android:textSize="20dp"
+            android:layout_below="@+id/healthstatus"
+            android:layout_alignStart="@+id/healthstatus" />-->
+    </RelativeLayout>
+
+</RelativeLayout>

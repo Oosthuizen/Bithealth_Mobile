@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bithealth.com.bithealth.ScanQR">
+
+    <!--
+        The layout should have a SurfaceView in order to display the preview frames captured by the camera
+    -->
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/camera_view"
+        />
+
+    <!--
+        If you want, you can also add a TextView to display the contents of the QR codes the API detects.
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/code_info"
+        android:textSize="20sp"
+        android:layout_marginLeft="16dp"
+        android:text="Nothing to read."
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
